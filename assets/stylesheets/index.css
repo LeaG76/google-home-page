@@ -5,7 +5,10 @@
     --gray-color: #7A6767;
     --white-color : #FEF5EA;
     --color-variant-1 : #E6CCB2;
-    --color-variant-2 : #7F5539;
+    --color-variant-2 : #DDB892;
+    --color-variant-3 : #B08969;
+    --color-variant-4 : #9C6644;
+    --color-variant-5 : #7F5539;
 }
 
 /* Default parameters */
@@ -60,7 +63,7 @@ body {
     border: none;
     width: 18px;
     height: 18px;
-    color: var(--color-variant-2);
+    color: var(--color-variant-5);
     margin-right: 8px;
     padding-bottom: 1px;
 }
