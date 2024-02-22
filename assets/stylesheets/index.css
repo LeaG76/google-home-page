@@ -32,7 +32,7 @@ body {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +52,7 @@ body {
     margin-bottom: 32px;
     display: flex;
     align-items: center;
-    padding-left: 18px;
+    padding-left: 16px;
 }
 
 .container .search-container .search-button {
@@ -61,7 +61,8 @@ body {
     width: 18px;
     height: 18px;
     color: var(--color-variant-2);
-    margin-right: 18px;
+    margin-right: 8px;
+    padding-bottom: 1px;
 }
 
 .container .search-container .search-input {
@@ -74,6 +75,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    padding-top: 2px;
 }
 
 .container .search-container .search-input:focus {
@@ -96,7 +98,7 @@ select:-webkit-autofill:focus {
   box-shadow: 0 0 0px 1000px var(--white-color) inset !important;
 }
 
-.container .shortcuts {
+.container .shortcuts-container {
     background-color: var(--color-variant-1);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -106,9 +108,10 @@ select:-webkit-autofill:focus {
     width: 456px;
     height: 100%;
     border-radius: 18px;
+    margin-bottom: 32px;
 }
 
-.container .shortcuts .icon-container {
+.container .shortcuts-container .section-container {
     background-color: var(--white-color);
     width: 56px;
     height: 56px;
@@ -118,6 +121,19 @@ select:-webkit-autofill:focus {
     align-items: center;
 }
 
-.container .shortcuts .icon-container .icon {
+.container .shortcuts-container .section-container .icon {
     width: 32px;
+}
+
+.container .data {
+    display: flex;
+    width: 616px;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container .data a {
+    color: var(--black-color);
+    text-decoration: none; 
 }
