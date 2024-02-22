@@ -8,6 +8,9 @@
         <!-- TITLE -->
         <title>Google Homepage</title>
 
+        <!-- IMPORT FONTAWESOME -->
+        <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
+
         <!-- IMPORT STYLESHEETS IN CSS3-->
         <link rel="stylesheet" href="assets/stylesheets/index.css">
     </head>
@@ -18,8 +21,15 @@
             <!-- LOGO GOOGLE -->
             <img src="assets/pictures/logo-google.svg" alt="" class="logo">
 
-            <!-- SEARCH INPUT -->
-            <div class="search-input"></div>
+            <!-- SEARCH CONTAINER -->
+            <div class="search-container">
+                <form onsubmit="searchOnGoogle();">
+                    <button type="submit" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input id="inputSearch" type="text" placeholder="Effectuer une recherche sur Google ..." name="search" class="search-input">
+                  </form>
+            </div>
 
             <!-- SHORTCUTS CONTAINER -->
             <div class="shortcuts">
@@ -115,5 +125,7 @@
                 </a>
             </div>
         </div>
+
+        <script src="assets/javascripts/index.js"></script>
     </body>
 </html>

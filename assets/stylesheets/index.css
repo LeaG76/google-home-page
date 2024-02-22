@@ -5,6 +5,7 @@
     --gray-color: #7A6767;
     --white-color : #FEF5EA;
     --color-variant-1 : #E6CCB2;
+    --color-variant-2 : #7F5539;
 }
 
 /* Default parameters */
@@ -43,12 +44,56 @@ body {
     margin-bottom: 32px;
 }
 
-.container .search-input {
+.container .search-container {
     width: 616px;
     height: 40px;
     border-radius: 24px;
     border: solid 2px var(--color-variant-1);
     margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+}
+
+.container .search-container .search-button {
+    background: none;
+    border: none;
+    width: 18px;
+    height: 18px;
+    color: var(--color-variant-2);
+    margin-right: 18px;
+}
+
+.container .search-container .search-input {
+    background: none;
+    border: none;
+    padding-block: 0;
+    padding-inline: 0;
+    width: 500px;
+    color: var(--gray-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container .search-container .search-input:focus {
+    color: var(--black-color);
+}
+
+input, textarea, select, a {
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  box-shadow: 0 0 0px 1000px var(--white-color) inset !important;
 }
 
 .container .shortcuts {
